@@ -24,12 +24,25 @@
 
 <body>
   <header>
-    <h1><a href=".">TODO: Your project name</a></h1>
+    <h1><a href=".">How has NBA Basketball Changed Since 2000?</a></h1>
 
     <p>
-      <strong>Team Members</strong>: [TODO] team member #1, team member #2, team member #3, team member #4
+      <strong>Team Members</strong>: Leo Cassel, Raymond Phu, Aparna Krishnan
     </p>
   </header>
+
+  <h2>NBA Shooting Trends from 2000 - 2020</h2>
+  <p>Notice how the corner 3 pointers have become more popular, and the mid-range shots are becoming less common.</p>
+
+  <div id="observablehq-7c7aa20e"></div>
+  <p>Credit: <a href="https://observablehq.com/d/364551627e9196c4@409">NBA SHOT CHARTS by Michael Cassel</a></p>
+
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@observablehq/inspector@5/dist/inspector.css">
+  <script type="module">
+  import {Runtime, Inspector} from "https://cdn.jsdelivr.net/npm/@observablehq/runtime@5/dist/runtime.js";
+  import define from "https://api.observablehq.com/d/364551627e9196c4@409.js?v=4";
+  new Runtime().module(define, Inspector.into("#observablehq-7c7aa20e"));
+  </script>
 
   <footer>
     <p>
