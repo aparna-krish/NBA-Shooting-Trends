@@ -36,7 +36,6 @@
   </section>
   <section>
   <div id="observablehq-viewof-curYear-6223500f"></div>
-  <p>Credit: <a href="https://observablehq.com/d/364551627e9196c4@409">NBA SHOT CHARTS by Michael Cassel</a></p>
 
   <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@observablehq/inspector@5/dist/inspector.css">
   <script type="module">
@@ -47,6 +46,17 @@
     return ["chart"].includes(name);
   });
   </script>
+
+  <div id="observablehq-chart-9bf293b6"></div>
+
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@observablehq/inspector@5/dist/inspector.css">
+  <script type="module">
+  import {Runtime, Inspector} from "https://cdn.jsdelivr.net/npm/@observablehq/runtime@5/dist/runtime.js";
+  import define from "https://api.observablehq.com/d/364551627e9196c4.js?v=4";
+  new Runtime().module(define, name => {
+    if (name === "chart") return new Inspector(document.querySelector("#observablehq-chart-9bf293b6"));
+  });
+</script>
   </section>
   <footer>
     <p>
