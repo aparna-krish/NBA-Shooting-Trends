@@ -47,6 +47,18 @@
     if (name === "chart") return new Inspector(document.querySelector("#observablehq-chart-e639fb10"));
   });
   </script>
+
+  <div id="observablehq-viz-0a335950"></div>
+  <p>Credit: <a href="https://observablehq.com/d/68ed76fd235ac449@115">Interactive SVG by Aparna</a></p>
+
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@observablehq/inspector@5/dist/inspector.css">
+  <script type="module">
+  import {Runtime, Inspector} from "https://cdn.jsdelivr.net/npm/@observablehq/runtime@5/dist/runtime.js";
+  import define from "https://api.observablehq.com/d/68ed76fd235ac449@115.js?v=4";
+  new Runtime().module(define, name => {
+    if (name === "viz") return new Inspector(document.querySelector("#observablehq-viz-0a335950"));
+  });
+  </script>
   </section>
   <footer>
     <p>
