@@ -35,17 +35,6 @@
   <p>Notice how the corner 3 pointers have become more popular, and the mid-range shots are becoming less common.</p>
 
   <div id="observablehq-viewof-curYear-af51d8ec"></div>
-
-  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@observablehq/inspector@5/dist/inspector.css">
-  <script type="module">
-  import {Runtime, Inspector} from "https://cdn.jsdelivr.net/npm/@observablehq/runtime@5/dist/runtime.js";
-  import define from "https://api.observablehq.com/d/364551627e9196c4@409.js?v=4";
-  new Runtime().module(define, name => {
-    if (name === "viewof curYear") return new Inspector(document.querySelector("#observablehq-viewof-curYear-af51d8ec"));
-    return ["chart"].includes(name);
-  });
-  </script>
-
   <div id="observablehq-chart-7c7aa20e"></div>
 
   <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@observablehq/inspector@5/dist/inspector.css">
@@ -53,6 +42,7 @@
   import {Runtime, Inspector} from "https://cdn.jsdelivr.net/npm/@observablehq/runtime@5/dist/runtime.js";
   import define from "https://api.observablehq.com/d/364551627e9196c4@409.js?v=4";
   new Runtime().module(define, name => {
+    if (name === "viewof curYear") return new Inspector(document.querySelector("#observablehq-viewof-curYear-af51d8ec"));
     if (name === "chart") return new Inspector(document.querySelector("#observablehq-chart-7c7aa20e"));
   });
   </script>
