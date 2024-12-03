@@ -22,77 +22,79 @@
 <!-- You are free to modify this template however you want! -->
 <!------------------------------------------------------------>
 
-<body width="70%">
-  <header>
-    <h1><a href=".">How has NBA Basketball Changed Since 2000?</a></h1>
+<body width="100%">
+  <div style="background-color: white; width: 70%">
+    <header>
+      <h1><a href=".">How has NBA Basketball Changed Since 2000?</a></h1>
 
-    <p>
-      <strong>Team Members</strong>: Leo Cassel, Raymond Phu, Aparna Krishnan
-    </p>
-  </header>
-  <section style="margin: auto; text-align: center">
-  <h2>NBA Shooting Trends from 2000-2020</h2>
-  <p>Notice how the corner 3 pointers have become more popular, and mid-range shots are becoming less common.</p>
-  </section>
-  <section width="100%">
-  
-  <div id="shotchart" style="margin: auto; width: 70%">
-    <div id="observablehq-viewof-curYear-e639fb10" style="margin: auto; width: 298px"></div>
-    <div id="observablehq-chart-e639fb10"></div>
-  </div>
+      <p>
+        <strong>Team Members</strong>: Leo Cassel, Raymond Phu, Aparna Krishnan
+      </p>
+    </header>
+    <section style="margin: auto; text-align: center">
+    <h2>NBA Shooting Trends from 2000-2020</h2>
+    <p>Notice how the corner 3 pointers have become more popular, and mid-range shots are becoming less common.</p>
+    </section>
+    <section width="100%">
+    
+    <div id="shotchart" style="margin: auto; width: 70%">
+      <div id="observablehq-viewof-curYear-e639fb10" style="margin: auto; width: 298px"></div>
+      <div id="observablehq-chart-e639fb10"></div>
+    </div>
 
-  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@observablehq/inspector@5/dist/inspector.css">
-  <script type="module">
-  import {Runtime, Inspector} from "https://cdn.jsdelivr.net/npm/@observablehq/runtime@5/dist/runtime.js";
-  import define from "https://api.observablehq.com/d/364551627e9196c4.js?v=4";
-  new Runtime().module(define, name => {
-    if (name === "viewof curYear") return new Inspector(document.querySelector("#observablehq-viewof-curYear-e639fb10"));
-    if (name === "chart") return new Inspector(document.querySelector("#observablehq-chart-e639fb10"));
-  });
-  </script>
-  </section>
-  <div>
-    <img src="./FPBackground.png" width="70%" style="margin-left: 15%">
-  </div>
-
-  <section>
-  <div id="observablehq-viz-0a335950"></div>
-  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@observablehq/inspector@5/dist/inspector.css">
-  <script type="module">
-  import {Runtime, Inspector} from "https://cdn.jsdelivr.net/npm/@observablehq/runtime@5/dist/runtime.js";
-  import define from "https://api.observablehq.com/d/68ed76fd235ac449@115.js?v=4";
-  new Runtime().module(define, name => {
-    if (name === "viz") return new Inspector(document.querySelector("#observablehq-viz-0a335950"));
-  });
-  </script>
-  </section>
-  <section>
-    <div id="observablehq-viewof-yrInput-febeacb2"></div>
-    <div id="observablehq-chart-febeacb2"></div>
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@observablehq/inspector@5/dist/inspector.css">
     <script type="module">
     import {Runtime, Inspector} from "https://cdn.jsdelivr.net/npm/@observablehq/runtime@5/dist/runtime.js";
-    import define from "https://api.observablehq.com/d/bd8548f4c7d9e327@50.js?v=4";
+    import define from "https://api.observablehq.com/d/364551627e9196c4.js?v=4";
     new Runtime().module(define, name => {
-      if (name === "viewof yrInput") return new Inspector(document.querySelector("#observablehq-viewof-yrInput-febeacb2"));
-      if (name === "chart") return new Inspector(document.querySelector("#observablehq-chart-febeacb2"));
+      if (name === "viewof curYear") return new Inspector(document.querySelector("#observablehq-viewof-curYear-e639fb10"));
+      if (name === "chart") return new Inspector(document.querySelector("#observablehq-chart-e639fb10"));
     });
-</script>
-<p>
-  Over the past 20 years, the NBA has undergone significant changes, particularly in key metrics such as Pace, Field Goals Attempted (FGA), Three-Point Attempts (3PA), and Points Per Game (PPG). The league has shifted toward faster gameplay, with an increased pace resulting in more possessions per game. Teams are attempting more shots overall, with a dramatic rise in three-point attempts, reflecting the influence of analytics that emphasize the efficiency of perimeter shooting. These changes have contributed to higher scoring averages, making the modern NBA faster, more offensively oriented, and heavily reliant on three-point shooting compared to two decades ago.
-</p>
-  </section>
-  <footer>
-    <p>
-      <a href="https://gitlab.cs.washington.edu/cse442/24au/fp/NBA-Shooting-Trends">Repository</a>
-      <br>
-      <a href="https://courses.cs.washington.edu/courses/cse442/24au/">CSE 442 Data Visualization</a>
-      <br>
-      <a href="https://www.washington.edu">University of Washington</a>
-    </p>
-  </footer>
+    </script>
+    </section>
+    <div>
+      <img src="./FPBackground.png" width="70%" style="margin-left: 15%">
+    </div>
 
-  <script src="main.js"></script>
+    <section>
+    <div id="observablehq-viz-0a335950"></div>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@observablehq/inspector@5/dist/inspector.css">
+    <script type="module">
+    import {Runtime, Inspector} from "https://cdn.jsdelivr.net/npm/@observablehq/runtime@5/dist/runtime.js";
+    import define from "https://api.observablehq.com/d/68ed76fd235ac449@115.js?v=4";
+    new Runtime().module(define, name => {
+      if (name === "viz") return new Inspector(document.querySelector("#observablehq-viz-0a335950"));
+    });
+    </script>
+    </section>
+    <section>
+      <div id="observablehq-viewof-yrInput-febeacb2"></div>
+      <div id="observablehq-chart-febeacb2"></div>
+      <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@observablehq/inspector@5/dist/inspector.css">
+      <script type="module">
+      import {Runtime, Inspector} from "https://cdn.jsdelivr.net/npm/@observablehq/runtime@5/dist/runtime.js";
+      import define from "https://api.observablehq.com/d/bd8548f4c7d9e327@50.js?v=4";
+      new Runtime().module(define, name => {
+        if (name === "viewof yrInput") return new Inspector(document.querySelector("#observablehq-viewof-yrInput-febeacb2"));
+        if (name === "chart") return new Inspector(document.querySelector("#observablehq-chart-febeacb2"));
+      });
+  </script>
+  <p>
+    Over the past 20 years, the NBA has undergone significant changes, particularly in key metrics such as Pace, Field Goals Attempted (FGA), Three-Point Attempts (3PA), and Points Per Game (PPG). The league has shifted toward faster gameplay, with an increased pace resulting in more possessions per game. Teams are attempting more shots overall, with a dramatic rise in three-point attempts, reflecting the influence of analytics that emphasize the efficiency of perimeter shooting. These changes have contributed to higher scoring averages, making the modern NBA faster, more offensively oriented, and heavily reliant on three-point shooting compared to two decades ago.
+  </p>
+    </section>
+    <footer>
+      <p>
+        <a href="https://gitlab.cs.washington.edu/cse442/24au/fp/NBA-Shooting-Trends">Repository</a>
+        <br>
+        <a href="https://courses.cs.washington.edu/courses/cse442/24au/">CSE 442 Data Visualization</a>
+        <br>
+        <a href="https://www.washington.edu">University of Washington</a>
+      </p>
+    </footer>
+
+    <script src="main.js"></script>
+  </div>
 </body>
 
 </html>
