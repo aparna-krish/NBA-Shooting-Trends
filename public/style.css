@@ -6,7 +6,8 @@ html {
 }
 
 body {
-  padding: 64px 32px;
+  margin-top: 0px;
+  margin-left: 0px;
   font: 18px/1.5 "Avenir", "Avenir Next", "Helvetica Neue", Arial, sans-serif;
   background-color: #492a7c;
 }
