@@ -4,5 +4,7 @@ The files in the [public](/public) directory are deployed to: https://cse442.pag
 
 
 Data Sources:
+
 For percentage of shots that come from 3 pointers - https://www.basketball-reference.com/
+
 For shot location data - https://www.kaggle.com/datasets/techbaron13/nba-shots-dataset-2001-present
