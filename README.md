@@ -11,4 +11,4 @@ For shot location data - https://www.kaggle.com/datasets/techbaron13/nba-shots-d
 
 For NBA trade data - https://en.wikipedia.org/wiki/Category:NBA_transactions
 
-For NBA Pace, 3PM, FGA, PPG data - https://www.nba.com/stats/teams/advanced and https://www.nba.com/stats/teams/traditional
+For NBA Pace, 3PM, FGA, PPG data - https://www.statmuse.com/nba/
